@@ -1,0 +1,111 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+<title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Warnify: product warnings Survey Form</h1>
+    <p id="description">Thank you for taking the time to give us feedback!</p>
+<form id="survey-form">
+  <fieldset>
+    <label for="name" id="name-label">Name <input required id="name" type="text" placeholder="Enter your name"/></label>
+    <label for="email" id="email-label">Email <input required id="email" type="email" placeholder="Enter your Email"/></label>
+    <label for="number" id="number-label">How many stores do you have on Shopify? <input id="number" type="number" min="1" max="100" placeholder="Stores number"/></label>
+    <label for="dropdown">What is your current plan? <select id="dropdown">
+<option value="">(select an option)</option>
+<option value="1">Free</option>
+<option value="2">Unlimited</option></select>
+</label>
+</fieldset>
+<fieldset>
+  <legend>Would you recommend our app to another merchant? </legend>
+<label for="definitely"> <input id="definitely" type="radio" name="definitely-maybe-notsure" value="definitely" checked>Definitely </label>
+<label for="maybe"> <input id="maybe" type="radio" name="definitely-maybe-notsure" value="maybe">Maybe </label>
+<label for="notsure"> <input id="notsure" type="radio" name="definitely-maybe-notsure" value="notsure">Not sure </label>
+</fieldset>
+<fieldset>
+  <legend>Which features are the most useful for you? </legend>
+  <label for="design"> <input id="design" type="checkbox" value="design-editing"> Design editing </label>
+  <label for="location"> <input id="location" type="checkbox" value="location-feature"> Location feature </label>
+  <label for="collection"> <input id="collection" type="checkbox" value="smart-collection-support"> Smart collection support </label> 
+<label for="checkout"> <input id="checkout" type="checkbox" value="checkout-restriction"> Checkout restriction </label>
+</fieldset>
+<fieldset>
+   <label for="comments">Any comments or suggestions?
+          <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here...""></textarea>
+        </label>
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+  </form>
+  </body>
+  </html>
+    
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  heigth: 100vh;
+  margin: 0;
+  background-color: #1a0526;
+  color: #f5f6f7;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+input, textarea {
+  background-color: #450463;
+  border: 1px solid #0a0a23;
+  color:  #ffffff;
+}
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+** end of undefined **
+
